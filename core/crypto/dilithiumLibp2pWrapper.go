@@ -1,13 +1,13 @@
 // the custom wrapper i made for dilithium post quantum keys
 
-
 package crypto
 
 import (
+	"crypto"
 	"crypto/rand"
 
-	"github.com/cloudflare/circl/sign/dilithium/mode3"
 	"github.com/TheNoobiCat/go-libp2p/core/crypto/pb"
+	"github.com/cloudflare/circl/sign/dilithium/mode3"
 )
 
 type DilithiumPrivKeyWrapper struct {
@@ -21,7 +21,7 @@ type DilithiumPubKeyWrapper struct {
 
 // wrapper functions for private key
 func (d *DilithiumPrivKeyWrapper) Sign(data []byte) ([]byte, error) {
-	signature, err := d.Key.Sign(rand.Reader, data, nil)
+	signature, err := d.Key.Sign(rand.Reader, data, crypto.Hash(0))
 	if err != nil {
 		return nil, err
 	}
