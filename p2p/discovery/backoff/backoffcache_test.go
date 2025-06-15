@@ -6,12 +6,12 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/p2p/discovery/mocks"
-	bhost "github.com/libp2p/go-libp2p/p2p/host/blank"
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	"github.com/TheNoobiCat/go-libp2p/p2p/discovery/mocks"
+	bhost "github.com/TheNoobiCat/go-libp2p/p2p/host/blank"
+	swarmt "github.com/TheNoobiCat/go-libp2p/p2p/net/swarm/testing"
 
-	"github.com/libp2p/go-libp2p/core/discovery"
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/discovery"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
 
 	mockClock "github.com/benbjohnson/clock"
 )
@@ -304,7 +304,7 @@ func TestBackoffDiscoveryCacheCapacity(t *testing.T) {
 
 	// Request peers with a lower limit this time using cache
 	// Here we are testing that the cache logic does not block when there are more peers known than the limit requested
-	// See https://github.com/libp2p/go-libp2p-discovery/issues/67
+	// See https://github.com/TheNoobiCat/go-libp2p-discovery/issues/67
 	assertNumPeersWithLimit(t, ctx, dCache, ns, n-1, n-1)
 
 	// Wait for next discovery so next request will bypass cache

@@ -3,7 +3,7 @@ package main
 import (
 	"os"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
 )
 
 // LoadIdentity reads a private key from the given path and, if it does not

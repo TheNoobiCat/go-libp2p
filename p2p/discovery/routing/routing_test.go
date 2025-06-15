@@ -7,15 +7,15 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/libp2p/go-libp2p/p2p/discovery/mocks"
-	"github.com/libp2p/go-libp2p/p2p/discovery/util"
-	bhost "github.com/libp2p/go-libp2p/p2p/host/blank"
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	"github.com/TheNoobiCat/go-libp2p/p2p/discovery/mocks"
+	"github.com/TheNoobiCat/go-libp2p/p2p/discovery/util"
+	bhost "github.com/TheNoobiCat/go-libp2p/p2p/host/blank"
+	swarmt "github.com/TheNoobiCat/go-libp2p/p2p/net/swarm/testing"
 
 	"github.com/ipfs/go-cid"
-	"github.com/libp2p/go-libp2p/core/discovery"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/discovery"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
 )
 
 type mockRoutingTable struct {

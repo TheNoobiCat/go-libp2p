@@ -9,9 +9,9 @@ import (
 	"time"
 
 	logging "github.com/ipfs/go-log/v2"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/transport"
-	"github.com/libp2p/go-libp2p/p2p/net/reuseport"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/p2p/net/reuseport"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
 )

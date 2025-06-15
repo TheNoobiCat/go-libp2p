@@ -10,11 +10,11 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/p2p/transport/webrtc/pb"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/webrtc/pb"
 	"github.com/libp2p/go-msgio/pbio"
 	"google.golang.org/protobuf/proto"
 
-	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
 
 	"github.com/pion/datachannel"
 	"github.com/pion/sctp"

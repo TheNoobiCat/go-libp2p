@@ -8,9 +8,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
 
-	"github.com/libp2p/go-libp2p/examples/testutils"
+	"github.com/TheNoobiCat/go-libp2p/examples/testutils"
 )
 
 func TestMain(t *testing.T) {

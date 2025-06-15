@@ -5,7 +5,7 @@ import (
 	"strconv"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
 )

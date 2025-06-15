@@ -5,8 +5,8 @@ import (
 	"os"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/p2p/transport/webrtc/pb"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/webrtc/pb"
 )
 
 var errWriteAfterClose = errors.New("write after close")

@@ -5,8 +5,8 @@ import (
 	"testing"
 	"time"
 
-	pstore "github.com/libp2p/go-libp2p/core/peerstore"
-	pt "github.com/libp2p/go-libp2p/p2p/host/peerstore/test"
+	pstore "github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	pt "github.com/TheNoobiCat/go-libp2p/p2p/host/peerstore/test"
 
 	mockclock "github.com/benbjohnson/clock"
 	ds "github.com/ipfs/go-datastore"

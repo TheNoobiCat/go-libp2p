@@ -5,9 +5,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/discovery"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/discovery"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
 )
 
 type clock interface {

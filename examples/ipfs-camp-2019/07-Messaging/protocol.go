@@ -9,7 +9,7 @@ import (
 	"time"
 
 	"github.com/gogo/protobuf/proto"
-	pubsub "github.com/libp2p/go-libp2p-pubsub"
+	pubsub "github.com/TheNoobiCat/go-libp2p-pubsub"
 )
 
 func chatInputLoop(ctx context.Context, topic *pubsub.Topic, donec chan struct{}) {

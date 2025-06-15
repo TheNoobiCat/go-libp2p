@@ -10,18 +10,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/p2p/net/simconn"
-	relayv2 "github.com/libp2p/go-libp2p/p2p/protocol/circuitv2/relay"
-	"github.com/libp2p/go-libp2p/p2p/protocol/holepunch"
-	holepunch_pb "github.com/libp2p/go-libp2p/p2p/protocol/holepunch/pb"
-	"github.com/libp2p/go-libp2p/p2p/protocol/identify"
-	"github.com/libp2p/go-libp2p/p2p/protocol/ping"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
+	"github.com/TheNoobiCat/go-libp2p"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/p2p/net/simconn"
+	relayv2 "github.com/TheNoobiCat/go-libp2p/p2p/protocol/circuitv2/relay"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/holepunch"
+	holepunch_pb "github.com/TheNoobiCat/go-libp2p/p2p/protocol/holepunch/pb"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/identify"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/ping"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
 	"go.uber.org/fx"
 
 	"github.com/libp2p/go-msgio/pbio"
@@ -671,7 +671,7 @@ func waitForHolePunchingSvcActive(t *testing.T, h host.Host) {
 }
 
 // setLegacyBehavior is an option that controls the isClient behavior of the hole punching service.
-// Prior to https://github.com/libp2p/go-libp2p/pull/3044, go-libp2p would
+// Prior to https://github.com/TheNoobiCat/go-libp2p/pull/3044, go-libp2p would
 // pick the opposite roles for client/server a hole punch. Setting this to
 // true preserves that behavior.
 //
@@ -741,7 +741,7 @@ func TestEndToEndSimConnectQUICReuse(t *testing.T) {
 	)
 	// Listen on quic *after* listening on webtransport.
 	// This is to test that the quicreuse logic is not returning the wrong transport.
-	// See: https://github.com/libp2p/go-libp2p/issues/3165#issuecomment-2700126706 for details.
+	// See: https://github.com/TheNoobiCat/go-libp2p/issues/3165#issuecomment-2700126706 for details.
 	h1.Network().Listen(
 		ma.StringCast("/ip4/2.2.0.1/udp/8001/quic-v1"),
 		ma.StringCast("/ip4/2.2.0.1/udp/9001/quic-v1"),

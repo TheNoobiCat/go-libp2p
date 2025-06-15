@@ -16,9 +16,9 @@ import (
 	ws "github.com/gorilla/websocket"
 	logging "github.com/ipfs/go-log/v2"
 
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/transport"
-	"github.com/libp2p/go-libp2p/p2p/transport/tcpreuse"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/tcpreuse"
 
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"

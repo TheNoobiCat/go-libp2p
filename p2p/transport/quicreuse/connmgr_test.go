@@ -11,9 +11,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/peer"
-	libp2ptls "github.com/libp2p/go-libp2p/p2p/security/tls"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	libp2ptls "github.com/TheNoobiCat/go-libp2p/p2p/security/tls"
 
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"

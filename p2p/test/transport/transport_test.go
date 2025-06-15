@@ -22,27 +22,27 @@ import (
 	"testing"
 	"time"
 
-	libp2ptls "github.com/libp2p/go-libp2p/p2p/security/tls"
+	libp2ptls "github.com/TheNoobiCat/go-libp2p/p2p/security/tls"
 
-	"github.com/libp2p/go-libp2p"
-	"github.com/libp2p/go-libp2p/config"
-	"github.com/libp2p/go-libp2p/core/connmgr"
-	"github.com/libp2p/go-libp2p/core/event"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	mocknetwork "github.com/libp2p/go-libp2p/core/network/mocks"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/sec"
-	rcmgr "github.com/libp2p/go-libp2p/p2p/host/resource-manager"
-	"github.com/libp2p/go-libp2p/p2p/muxer/yamux"
-	"github.com/libp2p/go-libp2p/p2p/net/swarm"
-	"github.com/libp2p/go-libp2p/p2p/protocol/ping"
-	"github.com/libp2p/go-libp2p/p2p/security/noise"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
-	"github.com/libp2p/go-libp2p/p2p/transport/tcp"
-	libp2pwebrtc "github.com/libp2p/go-libp2p/p2p/transport/webrtc"
-	"github.com/libp2p/go-libp2p/p2p/transport/websocket"
+	"github.com/TheNoobiCat/go-libp2p"
+	"github.com/TheNoobiCat/go-libp2p/config"
+	"github.com/TheNoobiCat/go-libp2p/core/connmgr"
+	"github.com/TheNoobiCat/go-libp2p/core/event"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	mocknetwork "github.com/TheNoobiCat/go-libp2p/core/network/mocks"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/core/sec"
+	rcmgr "github.com/TheNoobiCat/go-libp2p/p2p/host/resource-manager"
+	"github.com/TheNoobiCat/go-libp2p/p2p/muxer/yamux"
+	"github.com/TheNoobiCat/go-libp2p/p2p/net/swarm"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/ping"
+	"github.com/TheNoobiCat/go-libp2p/p2p/security/noise"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/tcp"
+	libp2pwebrtc "github.com/TheNoobiCat/go-libp2p/p2p/transport/webrtc"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/websocket"
 	"go.uber.org/mock/gomock"
 
 	ma "github.com/multiformats/go-multiaddr"
@@ -440,9 +440,9 @@ func TestBigPing(t *testing.T) {
 
 // TestLotsOfDataManyStreams tests sending a lot of data on multiple streams.
 func TestLotsOfDataManyStreams(t *testing.T) {
-	// Skip on windows because of https://github.com/libp2p/go-libp2p/issues/2341
+	// Skip on windows because of https://github.com/TheNoobiCat/go-libp2p/issues/2341
 	if runtime.GOOS == "windows" {
-		t.Skip("Skipping on windows because of https://github.com/libp2p/go-libp2p/issues/2341")
+		t.Skip("Skipping on windows because of https://github.com/TheNoobiCat/go-libp2p/issues/2341")
 	}
 
 	// 64k buffer

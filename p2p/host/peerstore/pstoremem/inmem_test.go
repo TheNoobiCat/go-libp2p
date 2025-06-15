@@ -5,9 +5,9 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/peer"
-	pstore "github.com/libp2p/go-libp2p/core/peerstore"
-	pt "github.com/libp2p/go-libp2p/p2p/host/peerstore/test"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	pstore "github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	pt "github.com/TheNoobiCat/go-libp2p/p2p/host/peerstore/test"
 	"github.com/multiformats/go-multiaddr"
 
 	mockClock "github.com/benbjohnson/clock"

@@ -10,18 +10,18 @@ import (
 	"testing"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/test"
-	"github.com/libp2p/go-libp2p/p2p/host/eventbus"
-	"github.com/libp2p/go-libp2p/p2p/host/peerstore/pstoremem"
-	libp2pquic "github.com/libp2p/go-libp2p/p2p/transport/quic"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
-	"github.com/libp2p/go-libp2p/p2p/transport/tcp"
-	"github.com/libp2p/go-libp2p/p2p/transport/websocket"
-	libp2pwebtransport "github.com/libp2p/go-libp2p/p2p/transport/webtransport"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/core/test"
+	"github.com/TheNoobiCat/go-libp2p/p2p/host/eventbus"
+	"github.com/TheNoobiCat/go-libp2p/p2p/host/peerstore/pstoremem"
+	libp2pquic "github.com/TheNoobiCat/go-libp2p/p2p/transport/quic"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/tcp"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/websocket"
+	libp2pwebtransport "github.com/TheNoobiCat/go-libp2p/p2p/transport/webtransport"
 	"github.com/quic-go/quic-go"
 
 	ma "github.com/multiformats/go-multiaddr"
@@ -251,7 +251,7 @@ func TestAddrResolutionRecursive(t *testing.T) {
 	matest.AssertMultiaddrsContain(t, addrs2, addr1)
 }
 
-// see https://github.com/libp2p/go-libp2p/issues/2562
+// see https://github.com/TheNoobiCat/go-libp2p/issues/2562
 func TestAddrResolutionRecursiveTransportSpecific(t *testing.T) {
 	p := test.RandPeerIDFatal(t)
 

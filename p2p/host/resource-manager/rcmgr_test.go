@@ -5,11 +5,11 @@ import (
 	"net/netip"
 	"testing"
 
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	"github.com/libp2p/go-libp2p/core/test"
-	"github.com/libp2p/go-libp2p/x/rate"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/protocol"
+	"github.com/TheNoobiCat/go-libp2p/core/test"
+	"github.com/TheNoobiCat/go-libp2p/x/rate"
 	"github.com/stretchr/testify/require"
 
 	"github.com/multiformats/go-multiaddr"

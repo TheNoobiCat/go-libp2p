@@ -11,9 +11,9 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/p2p/http/auth/internal/handshake"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/p2p/http/auth/internal/handshake"
 )
 
 type hmacPool struct {

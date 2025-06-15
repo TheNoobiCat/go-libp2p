@@ -27,7 +27,7 @@ const (
 //
 // PeerRecords are designed to be serialized to bytes and placed inside of
 // SignedEnvelopes before sharing with other peers.
-// See https://github.com/libp2p/go-libp2p/blob/master/core/record/pb/envelope.proto for
+// See https://github.com/TheNoobiCat/go-libp2p/blob/master/core/record/pb/envelope.proto for
 // the SignedEnvelope definition.
 type PeerRecord struct {
 	state protoimpl.MessageState `protogen:"open.v1"`

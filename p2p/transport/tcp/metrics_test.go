@@ -3,9 +3,9 @@ package tcp
 import (
 	"testing"
 
-	tptu "github.com/libp2p/go-libp2p/p2p/net/upgrader"
-	"github.com/libp2p/go-libp2p/p2p/transport/tcpreuse"
-	ttransport "github.com/libp2p/go-libp2p/p2p/transport/testsuite"
+	tptu "github.com/TheNoobiCat/go-libp2p/p2p/net/upgrader"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/tcpreuse"
+	ttransport "github.com/TheNoobiCat/go-libp2p/p2p/transport/testsuite"
 
 	"github.com/stretchr/testify/require"
 )

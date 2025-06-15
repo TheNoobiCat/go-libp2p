@@ -8,13 +8,13 @@ import (
 	"time"
 
 	"github.com/benbjohnson/clock"
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	tu "github.com/libp2p/go-libp2p/core/test"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	tu "github.com/TheNoobiCat/go-libp2p/core/test"
 
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	swarmt "github.com/TheNoobiCat/go-libp2p/p2p/net/swarm/testing"
 
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/stretchr/testify/require"
@@ -476,7 +476,7 @@ func TestGracePeriod(t *testing.T) {
 	}
 }
 
-// see https://github.com/libp2p/go-libp2p-connmgr/issues/23
+// see https://github.com/TheNoobiCat/go-libp2p-connmgr/issues/23
 func TestQuickBurstRespectsSilencePeriod(t *testing.T) {
 	mockClock := clock.NewMock()
 	cm, err := NewConnManager(10, 20, WithGracePeriod(0), WithClock(mockClock))
@@ -788,7 +788,7 @@ func TestTemporaryEntryConvertedOnConnection(t *testing.T) {
 	}
 }
 
-// see https://github.com/libp2p/go-libp2p-connmgr/issues/82
+// see https://github.com/TheNoobiCat/go-libp2p-connmgr/issues/82
 func TestConcurrentCleanupAndTagging(t *testing.T) {
 	cm, err := NewConnManager(1, 1, WithGracePeriod(0), WithSilencePeriod(time.Millisecond))
 	require.NoError(t, err)

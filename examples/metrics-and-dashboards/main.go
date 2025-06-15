@@ -9,13 +9,13 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/p2p/protocol/ping"
+	"github.com/TheNoobiCat/go-libp2p"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/ping"
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/prometheus/client_golang/prometheus/promhttp"
 
-	rcmgr "github.com/libp2p/go-libp2p/p2p/host/resource-manager"
+	rcmgr "github.com/TheNoobiCat/go-libp2p/p2p/host/resource-manager"
 )
 
 const ClientCount = 32

@@ -11,23 +11,23 @@ import (
 	"reflect"
 	"time"
 
-	"github.com/libp2p/go-libp2p/config"
-	"github.com/libp2p/go-libp2p/core/connmgr"
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/metrics"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/pnet"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	"github.com/libp2p/go-libp2p/core/transport"
-	"github.com/libp2p/go-libp2p/p2p/host/autorelay"
-	bhost "github.com/libp2p/go-libp2p/p2p/host/basic"
-	"github.com/libp2p/go-libp2p/p2p/net/swarm"
-	tptu "github.com/libp2p/go-libp2p/p2p/net/upgrader"
-	relayv2 "github.com/libp2p/go-libp2p/p2p/protocol/circuitv2/relay"
-	"github.com/libp2p/go-libp2p/p2p/protocol/holepunch"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
+	"github.com/TheNoobiCat/go-libp2p/config"
+	"github.com/TheNoobiCat/go-libp2p/core/connmgr"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/metrics"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/core/pnet"
+	"github.com/TheNoobiCat/go-libp2p/core/protocol"
+	"github.com/TheNoobiCat/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/p2p/host/autorelay"
+	bhost "github.com/TheNoobiCat/go-libp2p/p2p/host/basic"
+	"github.com/TheNoobiCat/go-libp2p/p2p/net/swarm"
+	tptu "github.com/TheNoobiCat/go-libp2p/p2p/net/upgrader"
+	relayv2 "github.com/TheNoobiCat/go-libp2p/p2p/protocol/circuitv2/relay"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/holepunch"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
 	"github.com/prometheus/client_golang/prometheus"
 
 	ma "github.com/multiformats/go-multiaddr"
@@ -244,8 +244,8 @@ func Identity(sk crypto.PrivKey) Option {
 
 // ConnectionManager configures libp2p to use the given connection manager.
 //
-// The current "standard" connection manager lives in github.com/libp2p/go-libp2p-connmgr. See
-// https://pkg.go.dev/github.com/libp2p/go-libp2p-connmgr?utm_source=godoc#NewConnManager.
+// The current "standard" connection manager lives in github.com/TheNoobiCat/go-libp2p-connmgr. See
+// https://pkg.go.dev/github.com/TheNoobiCat/go-libp2p-connmgr?utm_source=godoc#NewConnManager.
 func ConnectionManager(connman connmgr.ConnManager) Option {
 	return func(cfg *Config) error {
 		if cfg.ConnManager != nil {

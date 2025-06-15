@@ -10,7 +10,7 @@ import (
 
 	ma "github.com/multiformats/go-multiaddr"
 
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	swarmt "github.com/TheNoobiCat/go-libp2p/p2p/net/swarm/testing"
 
 	"go.uber.org/mock/gomock"
 )

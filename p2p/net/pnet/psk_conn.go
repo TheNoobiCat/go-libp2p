@@ -7,7 +7,7 @@ import (
 	"io"
 	"net"
 
-	"github.com/libp2p/go-libp2p/core/pnet"
+	"github.com/TheNoobiCat/go-libp2p/core/pnet"
 
 	"github.com/davidlazar/go-crypto/salsa20"
 	pool "github.com/libp2p/go-buffer-pool"

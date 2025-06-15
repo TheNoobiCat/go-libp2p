@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
-	"github.com/libp2p/go-libp2p/core/peer"
-	basic "github.com/libp2p/go-libp2p/p2p/host/basic"
-	swarmt "github.com/libp2p/go-libp2p/p2p/net/swarm/testing"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	basic "github.com/TheNoobiCat/go-libp2p/p2p/host/basic"
+	swarmt "github.com/TheNoobiCat/go-libp2p/p2p/net/swarm/testing"
 
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/stretchr/testify/require"

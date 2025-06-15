@@ -12,11 +12,11 @@ import (
 	"testing"
 	"time"
 
-	ic "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/network"
-	mocknetwork "github.com/libp2p/go-libp2p/core/network/mocks"
-	tpt "github.com/libp2p/go-libp2p/core/transport"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
+	ic "github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	mocknetwork "github.com/TheNoobiCat/go-libp2p/core/network/mocks"
+	tpt "github.com/TheNoobiCat/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
 	"github.com/quic-go/quic-go"
 	"go.uber.org/mock/gomock"
 

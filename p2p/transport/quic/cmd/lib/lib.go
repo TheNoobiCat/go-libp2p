@@ -7,11 +7,11 @@ import (
 	"io"
 	"log"
 
-	ic "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/peer"
-	tpt "github.com/libp2p/go-libp2p/core/transport"
-	libp2pquic "github.com/libp2p/go-libp2p/p2p/transport/quic"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
+	ic "github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	tpt "github.com/TheNoobiCat/go-libp2p/core/transport"
+	libp2pquic "github.com/TheNoobiCat/go-libp2p/p2p/transport/quic"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
 
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/quic-go/quic-go"

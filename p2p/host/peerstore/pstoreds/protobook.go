@@ -5,9 +5,9 @@ import (
 	"fmt"
 	"sync"
 
-	"github.com/libp2p/go-libp2p/core/peer"
-	pstore "github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/protocol"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	pstore "github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/core/protocol"
 )
 
 type protoSegment struct {

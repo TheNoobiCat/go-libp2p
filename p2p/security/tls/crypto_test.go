@@ -5,8 +5,8 @@ import (
 	"encoding/hex"
 	"testing"
 
-	"github.com/libp2p/go-libp2p/core/crypto/pb"
-	"github.com/libp2p/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto/pb"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
 
 	"github.com/stretchr/testify/assert"
 	"github.com/stretchr/testify/require"

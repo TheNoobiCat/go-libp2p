@@ -6,10 +6,10 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/event"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/p2p/host/eventbus"
+	"github.com/TheNoobiCat/go-libp2p/core/event"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/p2p/host/eventbus"
 )
 
 type natEmitter struct {

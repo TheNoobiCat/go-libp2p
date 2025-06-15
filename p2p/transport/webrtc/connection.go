@@ -9,10 +9,10 @@ import (
 	"sync"
 	"sync/atomic"
 
-	ic "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	tpt "github.com/libp2p/go-libp2p/core/transport"
+	ic "github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	tpt "github.com/TheNoobiCat/go-libp2p/core/transport"
 
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/pion/datachannel"

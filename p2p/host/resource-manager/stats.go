@@ -3,7 +3,7 @@ package rcmgr
 import (
 	"strings"
 
-	"github.com/libp2p/go-libp2p/p2p/metricshelper"
+	"github.com/TheNoobiCat/go-libp2p/p2p/metricshelper"
 	"github.com/prometheus/client_golang/prometheus"
 )
 
@@ -37,7 +37,7 @@ var (
 	peerConnsInbound  = peerConns.With(prometheus.Labels{"dir": "inbound"})
 	peerConnsOutbound = peerConns.With(prometheus.Labels{"dir": "outbound"})
 
-	// Lets us build a histogram of our current state. See https://github.com/libp2p/go-libp2p-resource-manager/pull/54#discussion_r911244757 for more information.
+	// Lets us build a histogram of our current state. See https://github.com/TheNoobiCat/go-libp2p-resource-manager/pull/54#discussion_r911244757 for more information.
 	previousPeerConns = prometheus.NewHistogramVec(prometheus.HistogramOpts{
 		Namespace: metricNamespace,
 		Name:      "previous_peer_connections",

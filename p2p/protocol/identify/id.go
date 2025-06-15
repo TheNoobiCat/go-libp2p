@@ -11,18 +11,18 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/event"
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	"github.com/libp2p/go-libp2p/core/record"
-	"github.com/libp2p/go-libp2p/p2p/host/eventbus"
-	useragent "github.com/libp2p/go-libp2p/p2p/protocol/identify/internal/user-agent"
-	"github.com/libp2p/go-libp2p/p2p/protocol/identify/pb"
-	"github.com/libp2p/go-libp2p/x/rate"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/event"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/core/protocol"
+	"github.com/TheNoobiCat/go-libp2p/core/record"
+	"github.com/TheNoobiCat/go-libp2p/p2p/host/eventbus"
+	useragent "github.com/TheNoobiCat/go-libp2p/p2p/protocol/identify/internal/user-agent"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/identify/pb"
+	"github.com/TheNoobiCat/go-libp2p/x/rate"
 
 	logging "github.com/ipfs/go-log/v2"
 	"github.com/libp2p/go-msgio/pbio"
@@ -477,7 +477,7 @@ func newStreamAndNegotiate(ctx context.Context, c network.Conn, proto protocol.I
 		return nil, fmt.Errorf("failed to open new stream: %w", err)
 	}
 
-	// Ignore the error. Consistent with our previous behavior. (See https://github.com/libp2p/go-libp2p/issues/3109)
+	// Ignore the error. Consistent with our previous behavior. (See https://github.com/TheNoobiCat/go-libp2p/issues/3109)
 	_ = s.SetDeadline(time.Now().Add(timeout))
 
 	if err := s.SetProtocol(proto); err != nil {

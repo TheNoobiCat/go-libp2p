@@ -11,8 +11,8 @@ import (
 	"io"
 	"math/big"
 
-	pb "github.com/libp2p/go-libp2p/core/crypto/pb"
-	"github.com/libp2p/go-libp2p/core/internal/catch"
+	pb "github.com/TheNoobiCat/go-libp2p/core/crypto/pb"
+	"github.com/TheNoobiCat/go-libp2p/core/internal/catch"
 )
 
 // ECDSAPrivateKey is an implementation of an ECDSA private key

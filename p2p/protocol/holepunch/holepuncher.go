@@ -7,11 +7,11 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/p2p/protocol/holepunch/pb"
-	"github.com/libp2p/go-libp2p/p2p/protocol/identify"
+	"github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/holepunch/pb"
+	"github.com/TheNoobiCat/go-libp2p/p2p/protocol/identify"
 	"github.com/libp2p/go-msgio/pbio"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
@@ -49,7 +49,7 @@ type holePuncher struct {
 	tracer *tracer
 	filter AddrFilter
 
-	// Prior to https://github.com/libp2p/go-libp2p/pull/3044, go-libp2p would
+	// Prior to https://github.com/TheNoobiCat/go-libp2p/pull/3044, go-libp2p would
 	// pick the opposite roles for client/server a hole punch. Setting this to
 	// true preserves that behavior
 	legacyBehavior bool

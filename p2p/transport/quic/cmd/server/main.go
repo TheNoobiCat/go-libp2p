@@ -5,7 +5,7 @@ import (
 	"log"
 	"os"
 
-	cmdlib "github.com/libp2p/go-libp2p/p2p/transport/quic/cmd/lib"
+	cmdlib "github.com/TheNoobiCat/go-libp2p/p2p/transport/quic/cmd/lib"
 )
 
 func main() {

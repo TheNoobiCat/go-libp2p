@@ -3,8 +3,8 @@ package config
 import (
 	"context"
 
-	basichost "github.com/libp2p/go-libp2p/p2p/host/basic"
-	routed "github.com/libp2p/go-libp2p/p2p/host/routed"
+	basichost "github.com/TheNoobiCat/go-libp2p/p2p/host/basic"
+	routed "github.com/TheNoobiCat/go-libp2p/p2p/host/routed"
 
 	"go.uber.org/fx"
 )

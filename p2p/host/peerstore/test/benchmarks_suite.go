@@ -4,7 +4,7 @@ import (
 	"fmt"
 	"testing"
 
-	pstore "github.com/libp2p/go-libp2p/core/peerstore"
+	pstore "github.com/TheNoobiCat/go-libp2p/core/peerstore"
 )
 
 func BenchmarkPeerstore(b *testing.B, factory PeerstoreFactory, _ string) {

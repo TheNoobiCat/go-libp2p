@@ -20,13 +20,13 @@ import (
 
 	lru "github.com/hashicorp/golang-lru/v2"
 	logging "github.com/ipfs/go-log/v2"
-	host "github.com/libp2p/go-libp2p/core/host"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/peerstore"
-	"github.com/libp2p/go-libp2p/core/protocol"
-	httpauth "github.com/libp2p/go-libp2p/p2p/http/auth"
-	gostream "github.com/libp2p/go-libp2p/p2p/net/gostream"
+	host "github.com/TheNoobiCat/go-libp2p/core/host"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/peerstore"
+	"github.com/TheNoobiCat/go-libp2p/core/protocol"
+	httpauth "github.com/TheNoobiCat/go-libp2p/p2p/http/auth"
+	gostream "github.com/TheNoobiCat/go-libp2p/p2p/net/gostream"
 	ma "github.com/multiformats/go-multiaddr"
 )
 
@@ -39,7 +39,7 @@ const WellKnownProtocols = "/.well-known/libp2p/protocols"
 
 // LegacyWellKnownProtocols refer to a the well-known resource used in an early
 // draft of the libp2p+http spec. Some users have deployed this, and need backwards compatibility.
-// Hopefully we can phase this out in the future. Context: https://github.com/libp2p/go-libp2p/pull/2797
+// Hopefully we can phase this out in the future. Context: https://github.com/TheNoobiCat/go-libp2p/pull/2797
 const LegacyWellKnownProtocols = "/.well-known/libp2p"
 
 const peerMetadataLimit = 8 << 10 // 8KB

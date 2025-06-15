@@ -9,7 +9,7 @@ func DefaultUserAgent() string {
 	return defaultUserAgent
 }
 
-var defaultUserAgent = "github.com/libp2p/go-libp2p"
+var defaultUserAgent = "github.com/TheNoobiCat/go-libp2p"
 
 func init() {
 	bi, ok := debug.ReadBuildInfo()

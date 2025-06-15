@@ -5,8 +5,8 @@ import (
 	"errors"
 	"net"
 
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/protocol"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/protocol"
 	"github.com/multiformats/go-multiaddr"
 )
 

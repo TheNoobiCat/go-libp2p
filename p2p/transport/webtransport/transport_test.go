@@ -19,14 +19,14 @@ import (
 	"testing/quick"
 	"time"
 
-	ic "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/network"
-	mocknetwork "github.com/libp2p/go-libp2p/core/network/mocks"
-	"github.com/libp2p/go-libp2p/core/peer"
-	"github.com/libp2p/go-libp2p/core/test"
-	tpt "github.com/libp2p/go-libp2p/core/transport"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
-	libp2pwebtransport "github.com/libp2p/go-libp2p/p2p/transport/webtransport"
+	ic "github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	mocknetwork "github.com/TheNoobiCat/go-libp2p/core/network/mocks"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
+	"github.com/TheNoobiCat/go-libp2p/core/test"
+	tpt "github.com/TheNoobiCat/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
+	libp2pwebtransport "github.com/TheNoobiCat/go-libp2p/p2p/transport/webtransport"
 
 	"github.com/benbjohnson/clock"
 	ma "github.com/multiformats/go-multiaddr"
@@ -365,7 +365,7 @@ func TestResourceManagerListening(t *testing.T) {
 }
 
 // TODO: unify somehow. We do the same in libp2pquic.
-//go:generate sh -c "go run go.uber.org/mock/mockgen -package libp2pwebtransport_test -destination mock_connection_gater_test.go github.com/libp2p/go-libp2p/core/connmgr ConnectionGater && go run golang.org/x/tools/cmd/goimports -w mock_connection_gater_test.go"
+//go:generate sh -c "go run go.uber.org/mock/mockgen -package libp2pwebtransport_test -destination mock_connection_gater_test.go github.com/TheNoobiCat/go-libp2p/core/connmgr ConnectionGater && go run golang.org/x/tools/cmd/goimports -w mock_connection_gater_test.go"
 
 func TestConnectionGaterDialing(t *testing.T) {
 	ctrl := gomock.NewController(t)

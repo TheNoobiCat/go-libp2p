@@ -10,8 +10,8 @@ import (
 	"strings"
 	"sync"
 
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/transport"
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/quic-go/quic-go"
 )

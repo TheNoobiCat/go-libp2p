@@ -5,8 +5,8 @@ import (
 	"context"
 	"errors"
 
-	ci "github.com/libp2p/go-libp2p/core/crypto"
-	"github.com/libp2p/go-libp2p/core/peer"
+	ci "github.com/TheNoobiCat/go-libp2p/core/crypto"
+	"github.com/TheNoobiCat/go-libp2p/core/peer"
 
 	cid "github.com/ipfs/go-cid"
 )
@@ -96,7 +96,7 @@ type Routing interface {
 // PubKeyFetcher is an interfaces that should be implemented by value stores
 // that can optimize retrieval of public keys.
 //
-// TODO(steb): Consider removing, see https://github.com/libp2p/go-libp2p-routing/issues/22.
+// TODO(steb): Consider removing, see https://github.com/TheNoobiCat/go-libp2p-routing/issues/22.
 type PubKeyFetcher interface {
 	// GetPublicKey returns the public key for the given peer.
 	GetPublicKey(context.Context, peer.ID) (ci.PubKey, error)

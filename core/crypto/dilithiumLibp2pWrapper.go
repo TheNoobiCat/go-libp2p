@@ -7,7 +7,7 @@ import (
 	"crypto/rand"
 
 	"github.com/cloudflare/circl/sign/dilithium/mode3"
-	"github.com/libp2p/go-libp2p/core/crypto/pb"
+	"github.com/TheNoobiCat/go-libp2p/core/crypto/pb"
 )
 
 type DilithiumPrivKeyWrapper struct {

@@ -17,9 +17,9 @@ import (
 	"time"
 
 	"github.com/gorilla/websocket"
-	"github.com/libp2p/go-libp2p/core/network"
-	"github.com/libp2p/go-libp2p/core/transport"
-	tptu "github.com/libp2p/go-libp2p/p2p/net/upgrader"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/transport"
+	tptu "github.com/TheNoobiCat/go-libp2p/p2p/net/upgrader"
 	ma "github.com/multiformats/go-multiaddr"
 	manet "github.com/multiformats/go-multiaddr/net"
 	"github.com/multiformats/go-multistream"

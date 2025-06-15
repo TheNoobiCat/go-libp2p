@@ -8,7 +8,7 @@ import (
 	"sync"
 	"time"
 
-	"github.com/libp2p/go-libp2p/core/network"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
 	manet "github.com/multiformats/go-multiaddr/net"
 	"golang.org/x/time/rate"
 )

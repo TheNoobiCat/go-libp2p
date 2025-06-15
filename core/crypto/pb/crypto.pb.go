@@ -208,7 +208,7 @@ const file_crypto_proto_rawDesc = "" +
 	"\tSecp256k1\x10\x02\x12\t\n" +
 	"\x05ECDSA\x10\x03\x12\x0e\n" +
 	"\tDilithium\x10\xb9\n" +
-	"B,Z*github.com/libp2p/go-libp2p/core/crypto/pb"
+	"B,Z*github.com/TheNoobiCat/go-libp2p/core/crypto/pb"
 
 var (
 	file_crypto_proto_rawDescOnce sync.Once

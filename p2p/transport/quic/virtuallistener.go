@@ -3,9 +3,9 @@ package libp2pquic
 import (
 	"sync"
 
-	"github.com/libp2p/go-libp2p/core/network"
-	tpt "github.com/libp2p/go-libp2p/core/transport"
-	"github.com/libp2p/go-libp2p/p2p/transport/quicreuse"
+	"github.com/TheNoobiCat/go-libp2p/core/network"
+	tpt "github.com/TheNoobiCat/go-libp2p/core/transport"
+	"github.com/TheNoobiCat/go-libp2p/p2p/transport/quicreuse"
 
 	ma "github.com/multiformats/go-multiaddr"
 	"github.com/quic-go/quic-go"
