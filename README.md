@@ -3,7 +3,7 @@
 ## install
 `go get github.com/TheNoobiCat/go-libp2p@v0.0.3-beta`
 
-## everything else is left untouched :)
+# everything else is left untouched :)
 
 
 <h1 align="center">
