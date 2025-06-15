@@ -1,7 +1,9 @@
-this fork has dilithium for post quantum cryptography as an option for identity. beta, use with caution.
+# this fork has dilithium for post quantum cryptography as an option for identity. beta, use with caution.
 
 ## install
 `go get github.com/TheNoobiCat/go-libp2p@v0.0.3-beta`
+
+## everything else is left untouched :)
 
 
 <h1 align="center">
