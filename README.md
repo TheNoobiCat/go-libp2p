@@ -1,3 +1,5 @@
+this fork has dilithium for post quantum cryptography as an option for identity. beta, use with caution
+
 
 <h1 align="center">
   <a href="https://libp2p.io/"><img width="250" src="https://github.com/libp2p/libp2p/blob/master/logo/black-bg-2.png?raw=true" alt="libp2p hex logo" /></a>
