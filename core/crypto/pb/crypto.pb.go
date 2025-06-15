@@ -2,7 +2,7 @@
 // versions:
 // 	protoc-gen-go v1.36.6
 // 	protoc        v3.6.1
-// source: crypto.proto
+// source: core/crypto/pb/crypto.proto
 
 package pb
 
@@ -60,11 +60,11 @@ func (x KeyType) String() string {
 }
 
 func (KeyType) Descriptor() protoreflect.EnumDescriptor {
-	return file_crypto_proto_enumTypes[0].Descriptor()
+	return file_core_crypto_pb_crypto_proto_enumTypes[0].Descriptor()
 }
 
 func (KeyType) Type() protoreflect.EnumType {
-	return &file_crypto_proto_enumTypes[0]
+	return &file_core_crypto_pb_crypto_proto_enumTypes[0]
 }
 
 func (x KeyType) Number() protoreflect.EnumNumber {
@@ -83,7 +83,7 @@ func (x *KeyType) UnmarshalJSON(b []byte) error {
 
 // Deprecated: Use KeyType.Descriptor instead.
 func (KeyType) EnumDescriptor() ([]byte, []int) {
-	return file_crypto_proto_rawDescGZIP(), []int{0}
+	return file_core_crypto_pb_crypto_proto_rawDescGZIP(), []int{0}
 }
 
 type PublicKey struct {
@@ -96,7 +96,7 @@ type PublicKey struct {
 
 func (x *PublicKey) Reset() {
 	*x = PublicKey{}
-	mi := &file_crypto_proto_msgTypes[0]
+	mi := &file_core_crypto_pb_crypto_proto_msgTypes[0]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -108,7 +108,7 @@ func (x *PublicKey) String() string {
 func (*PublicKey) ProtoMessage() {}
 
 func (x *PublicKey) ProtoReflect() protoreflect.Message {
-	mi := &file_crypto_proto_msgTypes[0]
+	mi := &file_core_crypto_pb_crypto_proto_msgTypes[0]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -121,7 +121,7 @@ func (x *PublicKey) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PublicKey.ProtoReflect.Descriptor instead.
 func (*PublicKey) Descriptor() ([]byte, []int) {
-	return file_crypto_proto_rawDescGZIP(), []int{0}
+	return file_core_crypto_pb_crypto_proto_rawDescGZIP(), []int{0}
 }
 
 func (x *PublicKey) GetType() KeyType {
@@ -148,7 +148,7 @@ type PrivateKey struct {
 
 func (x *PrivateKey) Reset() {
 	*x = PrivateKey{}
-	mi := &file_crypto_proto_msgTypes[1]
+	mi := &file_core_crypto_pb_crypto_proto_msgTypes[1]
 	ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 	ms.StoreMessageInfo(mi)
 }
@@ -160,7 +160,7 @@ func (x *PrivateKey) String() string {
 func (*PrivateKey) ProtoMessage() {}
 
 func (x *PrivateKey) ProtoReflect() protoreflect.Message {
-	mi := &file_crypto_proto_msgTypes[1]
+	mi := &file_core_crypto_pb_crypto_proto_msgTypes[1]
 	if x != nil {
 		ms := protoimpl.X.MessageStateOf(protoimpl.Pointer(x))
 		if ms.LoadMessageInfo() == nil {
@@ -173,7 +173,7 @@ func (x *PrivateKey) ProtoReflect() protoreflect.Message {
 
 // Deprecated: Use PrivateKey.ProtoReflect.Descriptor instead.
 func (*PrivateKey) Descriptor() ([]byte, []int) {
-	return file_crypto_proto_rawDescGZIP(), []int{1}
+	return file_core_crypto_pb_crypto_proto_rawDescGZIP(), []int{1}
 }
 
 func (x *PrivateKey) GetType() KeyType {
@@ -190,11 +190,11 @@ func (x *PrivateKey) GetData() []byte {
 	return nil
 }
 
-var File_crypto_proto protoreflect.FileDescriptor
+var File_core_crypto_pb_crypto_proto protoreflect.FileDescriptor
 
-const file_crypto_proto_rawDesc = "" +
+const file_core_crypto_pb_crypto_proto_rawDesc = "" +
 	"\n" +
-	"\fcrypto.proto\x12\tcrypto.pb\"G\n" +
+	"\x1bcore/crypto/pb/crypto.proto\x12\tcrypto.pb\"G\n" +
 	"\tPublicKey\x12&\n" +
 	"\x04Type\x18\x01 \x02(\x0e2\x12.crypto.pb.KeyTypeR\x04Type\x12\x12\n" +
 	"\x04Data\x18\x02 \x02(\fR\x04Data\"H\n" +
@@ -208,28 +208,28 @@ const file_crypto_proto_rawDesc = "" +
 	"\tSecp256k1\x10\x02\x12\t\n" +
 	"\x05ECDSA\x10\x03\x12\x0e\n" +
 	"\tDilithium\x10\xb9\n" +
-	"B,Z*github.com/TheNoobiCat/go-libp2p/core/crypto/pb"
+	"B,Z*github.com/libp2p/go-libp2p/core/crypto/pb"
 
 var (
-	file_crypto_proto_rawDescOnce sync.Once
-	file_crypto_proto_rawDescData []byte
+	file_core_crypto_pb_crypto_proto_rawDescOnce sync.Once
+	file_core_crypto_pb_crypto_proto_rawDescData []byte
 )
 
-func file_crypto_proto_rawDescGZIP() []byte {
-	file_crypto_proto_rawDescOnce.Do(func() {
-		file_crypto_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_crypto_proto_rawDesc), len(file_crypto_proto_rawDesc)))
+func file_core_crypto_pb_crypto_proto_rawDescGZIP() []byte {
+	file_core_crypto_pb_crypto_proto_rawDescOnce.Do(func() {
+		file_core_crypto_pb_crypto_proto_rawDescData = protoimpl.X.CompressGZIP(unsafe.Slice(unsafe.StringData(file_core_crypto_pb_crypto_proto_rawDesc), len(file_core_crypto_pb_crypto_proto_rawDesc)))
 	})
-	return file_crypto_proto_rawDescData
+	return file_core_crypto_pb_crypto_proto_rawDescData
 }
 
-var file_crypto_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
-var file_crypto_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
-var file_crypto_proto_goTypes = []any{
+var file_core_crypto_pb_crypto_proto_enumTypes = make([]protoimpl.EnumInfo, 1)
+var file_core_crypto_pb_crypto_proto_msgTypes = make([]protoimpl.MessageInfo, 2)
+var file_core_crypto_pb_crypto_proto_goTypes = []any{
 	(KeyType)(0),       // 0: crypto.pb.KeyType
 	(*PublicKey)(nil),  // 1: crypto.pb.PublicKey
 	(*PrivateKey)(nil), // 2: crypto.pb.PrivateKey
 }
-var file_crypto_proto_depIdxs = []int32{
+var file_core_crypto_pb_crypto_proto_depIdxs = []int32{
 	0, // 0: crypto.pb.PublicKey.Type:type_name -> crypto.pb.KeyType
 	0, // 1: crypto.pb.PrivateKey.Type:type_name -> crypto.pb.KeyType
 	2, // [2:2] is the sub-list for method output_type
@@ -239,27 +239,27 @@ var file_crypto_proto_depIdxs = []int32{
 	0, // [0:2] is the sub-list for field type_name
 }
 
-func init() { file_crypto_proto_init() }
-func file_crypto_proto_init() {
-	if File_crypto_proto != nil {
+func init() { file_core_crypto_pb_crypto_proto_init() }
+func file_core_crypto_pb_crypto_proto_init() {
+	if File_core_crypto_pb_crypto_proto != nil {
 		return
 	}
 	type x struct{}
 	out := protoimpl.TypeBuilder{
 		File: protoimpl.DescBuilder{
 			GoPackagePath: reflect.TypeOf(x{}).PkgPath(),
-			RawDescriptor: unsafe.Slice(unsafe.StringData(file_crypto_proto_rawDesc), len(file_crypto_proto_rawDesc)),
+			RawDescriptor: unsafe.Slice(unsafe.StringData(file_core_crypto_pb_crypto_proto_rawDesc), len(file_core_crypto_pb_crypto_proto_rawDesc)),
 			NumEnums:      1,
 			NumMessages:   2,
 			NumExtensions: 0,
 			NumServices:   0,
 		},
-		GoTypes:           file_crypto_proto_goTypes,
-		DependencyIndexes: file_crypto_proto_depIdxs,
-		EnumInfos:         file_crypto_proto_enumTypes,
-		MessageInfos:      file_crypto_proto_msgTypes,
+		GoTypes:           file_core_crypto_pb_crypto_proto_goTypes,
+		DependencyIndexes: file_core_crypto_pb_crypto_proto_depIdxs,
+		EnumInfos:         file_core_crypto_pb_crypto_proto_enumTypes,
+		MessageInfos:      file_core_crypto_pb_crypto_proto_msgTypes,
 	}.Build()
-	File_crypto_proto = out.File
-	file_crypto_proto_goTypes = nil
-	file_crypto_proto_depIdxs = nil
+	File_core_crypto_pb_crypto_proto = out.File
+	file_core_crypto_pb_crypto_proto_goTypes = nil
+	file_core_crypto_pb_crypto_proto_depIdxs = nil
 }
