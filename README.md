@@ -1,9 +1,8 @@
-# this fork has dilithium for post quantum cryptography as an option for identity. beta, use with caution.
+# this fork has dilithium for post quantum cryptography as an option for identity. doesn't work with transport at all. if anyone figures it out please open a pr
 
 ## install
 `go get github.com/TheNoobiCat/go-libp2p@v0.0.3-beta`
 
-# everything else is left untouched :)
 
 
 <h1 align="center">
